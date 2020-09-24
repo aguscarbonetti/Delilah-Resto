@@ -24,7 +24,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"_id\": \"5f45ad7b981b161b848595a7\"}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -283,7 +283,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user\": \"otro\",\r\n    \"full_name\":\"mila carbonetti\",\r\n    \"phone_number\": \"45677\",\r\n    \"address\": \"casita 12\",\r\n    \"password\": \"miaus\"\r\n}",
+							"raw": "{\r\n    \"user\": \"testacamica\",\r\n    \"full_name\":\"nombre test\",\r\n    \"phone_number\": \"45677\",\r\n    \"address\": \"casita 12\",\r\n    \"password\": \"acamica\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -338,7 +338,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user\": \"agustinita\",\r\n    \"pass\": \"agustina123\"\r\n}",
+							"raw": "{\r\n    \"user\": \"admin\",\r\n    \"pass\": \"admin\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -376,7 +376,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user\":\"bb\"\r\n}",
+							"raw": "{\r\n    \"user\":\"changedata\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -415,13 +415,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJiYiIsInJvbGUiOjIsImlhdCI6MTYwMDY0OTg1N30.cm5oFKqhFLqkw1haQyPjxCEtorr_GDarg3sCcBU3lSU",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJ0dHR0dCIsInJvbGUiOjEsImlhdCI6MTYwMDY1MzQ4MX0.xo2xPwy_sdL6VrDes-Jz4HSn4TWpLdk1igwAOyaimMA",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"payment_id\": 1\r\n}",
+							"raw": "{\r\n    \"payment_id\": 4,\r\n    \"products\": [1,3]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
