@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-09-2020 a las 03:22:41
+-- Tiempo de generación: 30-09-2020 a las 01:23:36
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.9
 
@@ -34,6 +34,14 @@ CREATE TABLE `orders` (
   `payment_id` int(11) NOT NULL,
   `status_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `orders`
+--
+
+INSERT INTO `orders` (`id`, `time_created_at`, `user_id`, `payment_id`, `status_id`) VALUES
+(21, '2020-09-28', 1, 1, 1),
+(22, '2020-09-28', 2, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -67,6 +75,14 @@ CREATE TABLE `orders_products` (
   `order_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `orders_products`
+--
+
+INSERT INTO `orders_products` (`order_id`, `product_id`) VALUES
+(21, 1),
+(22, 1);
 
 -- --------------------------------------------------------
 
@@ -216,7 +232,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT de la tabla `order status`
@@ -246,7 +262,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Restricciones para tablas volcadas
@@ -264,7 +280,7 @@ ALTER TABLE `orders`
 -- Filtros para la tabla `orders_products`
 --
 ALTER TABLE `orders_products`
-  ADD CONSTRAINT `orders_products_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`),
+  ADD CONSTRAINT `orders_products_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `orders_products_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`);
 
 --

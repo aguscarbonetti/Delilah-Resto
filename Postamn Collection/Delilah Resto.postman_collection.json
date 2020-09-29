@@ -283,7 +283,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user\": \"testacamica\",\r\n    \"full_name\":\"nombre test\",\r\n    \"phone_number\": \"45677\",\r\n    \"address\": \"casita 12\",\r\n    \"password\": \"acamica\"\r\n}",
+							"raw": "{\r\n    \"user\": \"testacamica\",\r\n    \"full_name\":\"nombre test\",\r\n    \"email\": \"correo@correo.com\",\r\n    \"phone_number\": \"45677\",\r\n    \"address\": \"casita 12\",\r\n    \"password\": \"acamica\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -494,7 +494,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://127.0.0.1:3000/order/2",
+							"raw": "http://127.0.0.1:3000/order/23",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -505,7 +505,7 @@
 							"port": "3000",
 							"path": [
 								"order",
-								"2"
+								"23"
 							]
 						}
 					},
